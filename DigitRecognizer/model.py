@@ -1,6 +1,7 @@
 import torch
 import torch.nn as nn
 import torchvision.transforms as T
+import os
 
 torch.set_printoptions(threshold=10_000)
 
@@ -40,7 +41,8 @@ model = CNN()
 
 
 def build():
-    model.load_state_dict(torch.load("best.pt"))
+    path = os.path.join(os.path.dirname(__file__), "best.pt")
+    model.load_state_dict(torch.load(path))
     model.eval()
 
 
