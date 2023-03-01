@@ -11,7 +11,7 @@ cols = st.columns([1, 2])
 with st.container():
     with cols[0]:
         canvas_result = st_canvas(
-            stroke_width=37,
+            stroke_width=35,
             stroke_color="#fff",
             background_color="#000",
             update_streamlit=True,
