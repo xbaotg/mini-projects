@@ -21,7 +21,7 @@ with st.container():
             key="canvas",
         )
 
-        st.write("#### Kết quả tốt nhất, khi vẽ tại trung tâm ảnh")
+        st.write("#### Kết quả tốt nhất khi vẽ tại trung tâm ảnh")
 
     with cols[1]:
         if 'init' not in st.session_state:
